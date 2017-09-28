@@ -22,12 +22,6 @@ int main()
 	std::string l="  ";
 	std::cout << a1 << l << a2 << l << a3 << std::endl;//print 3 numbers with 2 spaces
 	///////////////////////////////////////////
-	float a = 0;
-	std::cout << "Find solution" << std::endl;
-	std::cin >> a;
-	float x = 12 * a*a + 7 * a - 12;
-	std::cout << x=12*a*a+7*a-12= << x << std::endl;//print solution
-	//////////////////////////////
 	
     return 0;
 }
