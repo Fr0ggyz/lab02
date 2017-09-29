@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include <iostream>
 
 
@@ -121,7 +122,29 @@ int main()
 		std::cin >> enemy1;
 		int enemy2 = 0;
 		std::cin >> enemy2;
-		if ()
+		if ((rook1 == enemy1) || (rook2 == enemy2))
+		{
+			std::cout << " Rook can hit the enemy " << std::endl;
+		}
+		else
+		{
+            std::cout << " Rook can't hit the enemy " << std::endl;
+		}
+	}
+	/// 8
+	{
+		std::cout << " Enter a, b for bishop " << std::endl;
+		int bishop1 = 0;
+		std::cin >> bishop1;
+		int bishop2 = 0;
+		std::cin >> bishop2;
+		///
+		std::cout << " Enter c, d for enemy " << std::endl;
+		int enemy1 = 0;
+		std::cin >> enemy1;
+		int enemy2 = 0;
+		std::cin >> enemy2;
+		if ((bishop1 - enemy2) == (bishop2 - enemy1))
 	}
 	return 0;
 }
