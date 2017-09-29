@@ -93,16 +93,16 @@ std::cout << " length= " << length << std::endl;
 /// 9
 {
 std::cout << " Write AB " << std::endl;
-float AB = 0;
-std::cin >> AB;
+float ab = 0;
+std::cin >> ab;
 std::cout << " Write CD " << std::endl;
-float CD = 0;
-std::cin >> CD;
+float cd = 0;
+std::cin >> cd;
 std::cout << " Write H " << std::endl;
-float H = 0;
-std::cin >> H;
-float side = sqrt((((CD - AB) / 2) * ((CD - AB) / 2)) + (H * H));
-float perimeter = AB + CD + 2 * side;
+float h = 0;
+std::cin >> h;
+float side = sqrt((((cd - ab) / 2) * ((cd - ab) / 2)) + (h * h));
+float perimeter = ab + cd + 2 * side;
 std::cout << " perimeter= " << perimeter << std::endl;
 }
 /// 10
