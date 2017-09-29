@@ -6,7 +6,7 @@ int main()
 {
 /// 1
 {
-std::cout << "Pi=" << 3.14 << std::endl;
+std::cout << "pi=" << 3.14 << std::endl;
 }
 /// 2
 {
