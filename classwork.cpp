@@ -6,8 +6,8 @@
 int main()
 {
 	{
-		std::cout << " Enter X & Y " << std::endl;
-		int x = 0;
+        std::cout << " Enter X & Y " << std::endl;
+        int x = 0;
 		std::cin >> x;
 		int y = 0;
 		std::cin >> y;
