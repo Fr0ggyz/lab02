@@ -3,7 +3,7 @@
 
 int main()
 {
-	{
+    {
         std::cout << " Enter X & Y " << std::endl;
         int x = 0;
         std::cin >> x;
@@ -31,7 +31,7 @@ int main()
         }
         else
         {
-	    std::cout << " False " << std::endl;
+            std::cout << " False " << std::endl;
         }
     }
     /// 3
@@ -152,7 +152,7 @@ int main()
         std::pair<int, int> enemy;
         std::cin >> enemy.first >> enemy.second;
         while ((bishop.first > 8) || (bishop.second > 8) ||
-	       (bishop.first < 0) || (bishop.second < 0))
+                (bishop.first < 0) || (bishop.second < 0))
         {
             std::cout << " a and b must be > 0 and <= 8 " << std::endl;
             std::cin >> bishop.first >> bishop.second;
@@ -162,7 +162,8 @@ int main()
             std::cout << " c and d must be > 0 and <= 8 " << std::endl;
             std::cin >> enemy.first >> enemy.second;
         }
-        if ((bishop.first - enemy.first) == (bishop.second - enemy.second))
+        if (((bishop.first - enemy.first) == (bishop.second - enemy.second)) ||
+            ((bishop.first - enemy.first) == (enemy.second - enemy.first)))
         {
             std::cout << " Bishop can reach the enemy " << std::endl;
         }
@@ -190,7 +191,7 @@ int main()
             std::cin >> field.first >> field.second;
         }
         if ((((king.first - field.first) == 1) || ((king.second - field.second) == 1)) ||
-	    (((king.first - field.first) == -1) || ((king.second - field.second) == -1)))
+            (((king.first - field.first) == -1) || ((king.second - field.second) == -1)))
         {
             std::cout << " King can reach the playing field " << std::endl;
         }
@@ -199,7 +200,7 @@ int main()
             std::cout << " King can't reach the playing field " << std::endl;
         }
     }
-    ///10
+    /// 10
     {
         std::cout << " Enter a, b for queen " << std::endl;
         std::pair<int, int> queen;
@@ -218,7 +219,7 @@ int main()
             std::cin >> enemy.first >> enemy.second;
         }
         if ((queen.first - enemy.first) == (queen.second - enemy.second) ||
-	    ((queen.first == enemy.first) || (queen.second == enemy.second)))
+            ((queen.first == enemy.first) || (queen.second == enemy.second)))
         {
             std::cout << " Queen can reach the enemy " << std::endl;
         }
@@ -245,7 +246,7 @@ int main()
             std::cin >> field.first >> field.second;
         }
         if ((((pawn.first - field.first) == 0) && ((pawn.second - field.second) == -1)) ||
-	    (((pawn.first - field.first) == 0) && ((pawn.second - field.second) == -2)))
+            (((pawn.first - field.first) == 0) && ((pawn.second - field.second) == -2)))
         {
             std::cout << " Pawn can reach the field " << std::endl;
         }
@@ -272,7 +273,7 @@ int main()
             std::cin >> enemy.first >> enemy.second;
         }
         if ((enemy.first == pawn.first + 1) && ((enemy.second == pawn.second + 1) ||
-						(enemy.second == pawn.second - 1)))
+            (enemy.second == pawn.second - 1)))
         {
             std::cout << " The pawn can reach the enemy " << std::endl;
         }
