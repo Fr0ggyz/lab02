@@ -1,8 +1,6 @@
 #include <iostream>
 #include <math.h>
 
-
-
 int main()
 {
 	{
@@ -119,156 +117,156 @@ int main()
 		}
     }
 	/// 7
-	{
-		std::cout << " Enter a, b for rook " << std::endl;
-		std::pair<int, int> rook;
-		std::cin >> rook.first >> rook.second;
-		std::cout << " Enter c, d for enemy figure " << std::endl;
-		std::pair<int, int> enemy;
-		std::cin >> enemy.first >> enemy.second;
-		while ((rook.first > 8) || (rook.second > 8) || (rook.first < 0) || (rook.second < 0))
-		{
-		    std::cout << " a and b must be >0 and <=8 " << std::endl;
-			std::cin >> rook.first >> rook.second;
-		}
-		while ((enemy.first > 8) || (enemy.second > 8) || (enemy.first < 0) || (enemy.second < 0))
-		{
-			std::cout << " c and d must be > 0 and <= 8 " << std::endl;
-			std::cin >> enemy.first >> enemy.second;
-		}
-		if ((rook.first == enemy.first) || (rook.second == enemy.second))
-		{
-			std::cout << " Rook can reach the enemy " << std::endl;
-		}
-		else
-		{
+    {
+        std::cout << " Enter a, b for rook " << std::endl;
+        std::pair<int, int> rook;
+        std::cin >> rook.first >> rook.second;
+        std::cout << " Enter c, d for enemy figure " << std::endl;
+        std::pair<int, int> enemy;
+        std::cin >> enemy.first >> enemy.second;
+        while ((rook.first > 8) || (rook.second > 8) || (rook.first < 0) || (rook.second < 0))
+        {
+            std::cout << " a and b must be >0 and <=8 " << std::endl;
+            std::cin >> rook.first >> rook.second;
+        }
+        while ((enemy.first > 8) || (enemy.second > 8) || (enemy.first < 0) || (enemy.second < 0))
+        {
+            std::cout << " c and d must be > 0 and <= 8 " << std::endl;
+            std::cin >> enemy.first >> enemy.second;
+        }
+        if ((rook.first == enemy.first) || (rook.second == enemy.second))
+        {
+            std::cout << " Rook can reach the enemy " << std::endl;
+        }
+        else
+        {
             std::cout << " Rook can't reach the enemy " << std::endl;
-		}
-	}
+        }
+    }
 	/// 8
-	{
-		std::cout << " Enter a, b for bishop " << std::endl;
-		std::pair<int, int> bishop;
-		std::cin >> bishop.first >> bishop.second;
-		std::cout << " Enter c, d for enemy figure " << std::endl;
-		std::pair<int, int> enemy;
-		std::cin >> enemy.first >> enemy.second;
-		while ((bishop.first > 8) || (bishop.second > 8) || (bishop.first < 0) || (bishop.second < 0))
-		{
-			std::cout << " a and b must be > 0 and <= 8 " << std::endl;
-			std::cin >> bishop.first >> bishop.second;
-		}
-		while ((enemy.first > 8) || (enemy.second > 8) || (enemy.first < 0) || (enemy.second < 0))
-		{
-			std::cout << " c and d must be > 0 and <= 8 " << std::endl;
-			std::cin >> enemy.first >> enemy.second;
-		}
-		if ((bishop.first - enemy.first) == (bishop.second - enemy.second))
-		{
-			std::cout << " Bishop can reach the enemy " << std::endl;
-		}
-		else
-		{
-			std::cout << " Bishop can't reach the enemy " << std::endl;
-		}
-	}
-	/// 9
-	{
-		std::cout << " Enter a, b for king " << std::endl;
-		std::pair<int, int> king;
-		std::cin >> king.first >> king.second;
-		std::cout << " Enter c, d for playing field " << std::endl;
-		std::pair<int, int> field;
-		std::cin >> field.first >> field.second;
-		while ((king.first > 8) || (king.second > 8) || (king.first < 0) || (king.second < 0))
-		{
-			std::cout << " a and b must be > 0 and <= 8 " << std::endl;
-			std::cin >> king.first >> king.second;
-		}
-		while ((field.first > 8) || (field.second > 8) || (field.first < 0) || (field.second < 0))
-		{
-			std::cout << " c and d must be > 0 and <= 8 " << std::endl;
-			std::cin >> field.first >> field.second;
-		}
-		if ((((king.first - field.first) == 1) || ((king.second - field.second) == 1)) || (((king.first - field.first) == -1) || ((king.second - field.second) == -1)))
-		{
-			std::cout << " King can reach the playing field " << std::endl;
-		}
-		else
-		{
-			std::cout << " King can't reach the playing field " << std::endl;
-		}
-	}
-	///10
-	{
-		std::cout << " Enter a, b for queen " << std::endl;
-		std::pair<int, int> queen;
-		std::cin >> queen.first >> queen.second;
-		std::cout << " Enter c, d for enemy figure " << std::endl;
-		std::pair<int, int> enemy;
-		std::cin >> enemy.first >> enemy.second;
-		while ((queen.first > 8) || (queen.second > 8) || (queen.first < 0) || (queen.second < 0))
-		{
-			std::cout << " a and b must be > 0 and <= 8 " << std::endl;
-			std::cin >> queen.first >> queen.second;
-		}
-		while ((enemy.first > 8) || (enemy.second > 8) || (enemy.first < 0) || (enemy.second < 0))
-		{
-			std::cout << " c and d must be > 0 and <= 8 " << std::endl;
-			std::cin >> enemy.first >> enemy.second;
-		}
-		if ((queen.first - enemy.first) == (queen.second - enemy.second) || ((queen.first == enemy.first) || (queen.second == enemy.second)))
-		{
-			std::cout << " Queen can reach the enemy " << std::endl;
-		}
-		else
-		{
-			std::cout << " Queen can't reach the enemy " << std::endl;
-		}
-	}
-	/// 11(i)
-	{
-		std::cout << " Enter a, b for pawn " << std::endl;
-		std::pair<int, int> pawn;
-		std::cin >> pawn.first >> pawn.second;
-		std::pair<int, int> field;
-		std::cin >> field.first >> field.second;
-		while ((pawn.first > 8) || (pawn.second > 8) || (pawn.first < 0) || (pawn.second < 0))
-		{
-			std::cout << " a and b must be > 0 and <= 8 " << std::endl;
-			std::cin >> pawn.first >> pawn.second;
-		}
-		while ((field.first > 8) || (field.second > 8) || (field.first < 0) || (field.second < 0))
-		{
-			std::cout << " c and d must be > 0 and <= 8 " << std::endl;
-			std::cin >> field.first >> field.second;
-		}
-		if ((((pawn.first - field.first) == 0) && ((pawn.second - field.second) == -1)) || (((pawn.first - field.first) == 0) && ((pawn.second - field.second) == -2)))
-		{
-			std::cout << " Pawn can reach the field " << std::endl;
-		}
-		else
-		{
-			std::cout << " Pawn can't reach the field " << std::endl;
-		}
-	}
-	/// 11(ii)
-	{
-		std::cout << " Enter a, b for pawn " << std::endl;
-		std::pair<int, int> pawn;
-		std::cin >> pawn.first >> pawn.second;
-		std::pair<int, int> enemy;
-		std::cin >> enemy.first >> enemy.second;
-		while ((pawn.first > 8) || (pawn.second > 8) || (pawn.first < 0) || (pawn.second < 0))
-		{
-			std::cout << " a and b must be > 0 and <= 8 " << std::endl;
-			std::cin >> pawn.first >> pawn.second;
-		}
-		while ((enemy.first > 8) || (enemy.second > 8) || (enemy.first < 0) || (enemy.second < 0))
-		{
-			std::cout << " c and d must be > 0 and <= 8 " << std::endl;
-			std::cin >> enemy.first >> enemy.second;
-		}
+    {
+        std::cout << " Enter a, b for bishop " << std::endl;
+        std::pair<int, int> bishop;
+        std::cin >> bishop.first >> bishop.second;
+        std::cout << " Enter c, d for enemy figure " << std::endl;
+        std::pair<int, int> enemy;
+        std::cin >> enemy.first >> enemy.second;
+        while ((bishop.first > 8) || (bishop.second > 8) || (bishop.first < 0) || (bishop.second < 0))
+        {
+            std::cout << " a and b must be > 0 and <= 8 " << std::endl;
+            std::cin >> bishop.first >> bishop.second;
+        }
+        while ((enemy.first > 8) || (enemy.second > 8) || (enemy.first < 0) || (enemy.second < 0))
+        {
+            std::cout << " c and d must be > 0 and <= 8 " << std::endl;
+            std::cin >> enemy.first >> enemy.second;
+        }
+        if ((bishop.first - enemy.first) == (bishop.second - enemy.second))
+        {
+            std::cout << " Bishop can reach the enemy " << std::endl;
+        }
+        else
+        {
+            std::cout << " Bishop can't reach the enemy " << std::endl;
+        }
+    }
+    /// 9
+    {
+        std::cout << " Enter a, b for king " << std::endl;
+        std::pair<int, int> king;
+        std::cin >> king.first >> king.second;
+        std::cout << " Enter c, d for playing field " << std::endl;
+        std::pair<int, int> field;
+        std::cin >> field.first >> field.second;
+        while ((king.first > 8) || (king.second > 8) || (king.first < 0) || (king.second < 0))
+        {
+            std::cout << " a and b must be > 0 and <= 8 " << std::endl;
+            std::cin >> king.first >> king.second;
+        }
+        while ((field.first > 8) || (field.second > 8) || (field.first < 0) || (field.second < 0))
+        {
+            std::cout << " c and d must be > 0 and <= 8 " << std::endl;
+            std::cin >> field.first >> field.second;
+        }
+        if ((((king.first - field.first) == 1) || ((king.second - field.second) == 1)) || (((king.first - field.first) == -1) || ((king.second - field.second) == -1)))
+        {
+            std::cout << " King can reach the playing field " << std::endl;
+        }
+        else
+        {
+            std::cout << " King can't reach the playing field " << std::endl;
+        }
+    }
+    ///10
+    {
+        std::cout << " Enter a, b for queen " << std::endl;
+        std::pair<int, int> queen;
+        std::cin >> queen.first >> queen.second;
+        std::cout << " Enter c, d for enemy figure " << std::endl;
+        std::pair<int, int> enemy;
+        std::cin >> enemy.first >> enemy.second;
+        while ((queen.first > 8) || (queen.second > 8) || (queen.first < 0) || (queen.second < 0))
+        {
+            std::cout << " a and b must be > 0 and <= 8 " << std::endl;
+            std::cin >> queen.first >> queen.second;
+        }
+        while ((enemy.first > 8) || (enemy.second > 8) || (enemy.first < 0) || (enemy.second < 0))
+        {
+            std::cout << " c and d must be > 0 and <= 8 " << std::endl;
+            std::cin >> enemy.first >> enemy.second;
+        }
+        if ((queen.first - enemy.first) == (queen.second - enemy.second) || ((queen.first == enemy.first) || (queen.second == enemy.second)))
+        {
+            std::cout << " Queen can reach the enemy " << std::endl;
+        }
+        else
+        {
+            std::cout << " Queen can't reach the enemy " << std::endl;
+        }
+    }
+    /// 11(i)
+    {
+        std::cout << " Enter a, b for pawn " << std::endl;
+        std::pair<int, int> pawn;
+        std::cin >> pawn.first >> pawn.second;
+        std::pair<int, int> field;
+        std::cin >> field.first >> field.second;
+        while ((pawn.first > 8) || (pawn.second > 8) || (pawn.first < 0) || (pawn.second < 0))
+        {
+            std::cout << " a and b must be > 0 and <= 8 " << std::endl;
+            std::cin >> pawn.first >> pawn.second;
+        }
+        while ((field.first > 8) || (field.second > 8) || (field.first < 0) || (field.second < 0))
+        {
+            std::cout << " c and d must be > 0 and <= 8 " << std::endl;
+            std::cin >> field.first >> field.second;
+        }
+        if ((((pawn.first - field.first) == 0) && ((pawn.second - field.second) == -1)) || (((pawn.first - field.first) == 0) && ((pawn.second - field.second) == -2)))
+        {
+            std::cout << " Pawn can reach the field " << std::endl;
+        }
+        else
+        {
+            std::cout << " Pawn can't reach the field " << std::endl;
+        }
+    }
+    /// 11(ii)
+    {
+        std::cout << " Enter a, b for pawn " << std::endl;
+        std::pair<int, int> pawn;
+        std::cin >> pawn.first >> pawn.second;
+        std::pair<int, int> enemy;
+        std::cin >> enemy.first >> enemy.second;
+        while ((pawn.first > 8) || (pawn.second > 8) || (pawn.first < 0) || (pawn.second < 0))
+        {
+            std::cout << " a and b must be > 0 and <= 8 " << std::endl;
+            std::cin >> pawn.first >> pawn.second;
+        }
+        while ((enemy.first > 8) || (enemy.second > 8) || (enemy.first < 0) || (enemy.second < 0))
+        {
+            std::cout << " c and d must be > 0 and <= 8 " << std::endl;
+            std::cin >> enemy.first >> enemy.second;
+        }
         if ((enemy.first == pawn.first + 1) && ((enemy.second == pawn.second + 1) || (enemy.second == pawn.second - 1)))
         {
             std::cout << " The pawn can reach the enemy " << std::endl;
@@ -277,7 +275,7 @@ int main()
         {
             std::cout << " The pawn can't reach the enemy " << std::endl;
         }
-	}
+    }
     /// 12
     {
         const int f = 7;
@@ -349,6 +347,6 @@ int main()
         }
         std::cout << " Multiplication from " << a << " to " << b << " = " << m << std::endl;
     }
-	return 0;
+    return 0;
 }
 
