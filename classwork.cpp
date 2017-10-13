@@ -11,7 +11,7 @@ int main()
         std::cin >> y;
         if ((x % 2 == 1) && (y % 2 == 1))
         {
-        std::cout << "  Both numbers aren't even" << std::endl;
+            std::cout << "  Both numbers aren't even" << std::endl;
         }
         else
         {
@@ -25,9 +25,9 @@ int main()
         std::cin >> x;
         int y = 0;
         std::cin >> y;
-        if (((x <= 20) && (y >= 20)) || ((x >= 20) && (y <= 20)))
+        if (((x < 20) && (y > 20)) || ((x > 20) && (y < 20)))
         {
-        std::cout << " True " << std::endl;
+            std::cout << " True " << std::endl;
         }
         else
         {
@@ -47,7 +47,7 @@ int main()
         }
         else
         {
-        std::cout << " Both numbers aren't zero" << std::endl;
+            std::cout << " Both numbers aren't zero" << std::endl;
         }
     }
     /// 4
@@ -61,11 +61,11 @@ int main()
         std::cin >> z;
         if ((x < 0) && (y < 0) && (z < 0))\
         {
-        std::cout << " All numbers are negative(-) " << std::endl;
+            std::cout << " All numbers are negative(-) " << std::endl;
         }
         else
         {
-        std::cout << " At least one number is positive(+) " << std::endl;
+            std::cout << " At least one number is positive(+) " << std::endl;
         }
     }
     /// 5
@@ -151,8 +151,7 @@ int main()
         std::cout << " Enter c, d for enemy figure " << std::endl;
         std::pair<int, int> enemy;
         std::cin >> enemy.first >> enemy.second;
-        while ((bishop.first > 8) || (bishop.second > 8) ||
-                (bishop.first < 0) || (bishop.second < 0))
+        while ((bishop.first > 8) || (bishop.second > 8) || (bishop.first < 0) || (bishop.second < 0))
         {
             std::cout << " a and b must be > 0 and <= 8 " << std::endl;
             std::cin >> bishop.first >> bishop.second;
