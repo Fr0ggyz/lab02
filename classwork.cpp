@@ -25,7 +25,7 @@ int main()
         std::cin >> x;
         int y = 0;
         std::cin >> y;
-        if (((x < 20) && (y > 20)) || ((x > 20) && (y < 20)))
+        if (((x < 20) && (y => 20)) || ((x => 20) && (y < 20)))
         {
             std::cout << " True " << std::endl;
         }
@@ -59,7 +59,7 @@ int main()
         std::cin >> y;
         int z = 0;
         std::cin >> z;
-        if ((x < 0) && (y < 0) && (z < 0))\
+        if ((x < 0) && (y < 0) && (z < 0))
         {
             std::cout << " All numbers are negative(-) " << std::endl;
         }
