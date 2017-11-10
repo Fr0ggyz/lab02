@@ -3,120 +3,120 @@
 
 int main()
 {
-	{
+    {
         std::cout << " Enter X & Y " << std::endl;
         int x = 0;
-		std::cin >> x;
-		int y = 0;
-		std::cin >> y;
-		if ((x % 2 == 1) && (y % 2 == 1))
-		{
-			std::cout << "  Both numbers aren't even" << std::endl;
-		}
-		else
-		{
-			std::cout << " At least one number is even " << std::endl;
-		}
-	}
+        std::cin >> x;
+        int y = 0;
+        std::cin >> y;
+        if ((x % 2 == 1) && (y % 2 == 1))
+        {
+            std::cout << "  Both numbers aren't even" << std::endl;
+        }
+        else
+        {
+            std::cout << " At least one number is even " << std::endl;
+        }
+    }
     /// 2
-		{
-			std::cout << " Enter X & Y " << std::endl;
-			int x = 0;
-			std::cin >> x;
-			int y = 0;
-			std::cin >> y;
-			if (((x < 20) && (y >= 20)) || ((x >= 20) && (y < 20)))
-			{
-				std::cout << " True " << std::endl;
-			}
-			else
-			{
-				std::cout << " False " << std::endl;
-			}
-		}
+    {
+        std::cout << " Enter X & Y " << std::endl;
+        int x = 0;
+        std::cin >> x;
+        int y = 0;
+        std::cin >> y;
+        if (((x < 20) && (y >= 20)) || ((x >= 20) && (y < 20)))
+        {
+            std::cout << " True " << std::endl;
+        }
+        else
+        {
+            std::cout << " False " << std::endl;
+        }
+    }
     /// 3
     {
-			std::cout << " Enter X & Y " << std::endl;
-			int x = 0;
-			std::cin >> x;
-			int y = 0;
-			std::cin >> y;
-			if (((x == 0) || (y == 0)))
-			{
-				std::cout << "At least one number is zero " << std::endl;
-			}
-			else
-			{
-				std::cout << " Both numbers aren't zero" << std::endl;
-			}
+        std::cout << " Enter X & Y " << std::endl;
+        int x = 0;
+        std::cin >> x;
+        int y = 0;
+        std::cin >> y;
+        if (((x == 0) || (y == 0)))
+        {
+            std::cout << "At least one number is zero " << std::endl;
+        }
+        else
+        {
+            std::cout << " Both numbers aren't zero" << std::endl;
+        }
     }
-	/// 4
-	{
-		std::cout << " Enter X, Y, Z " << std::endl;
-		int x = 0;
-		std::cin >> x;
-		int y = 0;
-		std::cin >> y;
-		int z = 0;
-		std::cin >> z;
-		if ((x < 0) && (y < 0) && (z < 0))\
-		{
-                    std::cout << " All numbers are negative(-) " << std::endl;
-		}
-		else
-		{
-                    std::cout << " At least one number is positive(+) " << std::endl;
-		}
-	}
-	/// 5
-	{
-		std::cout << " Enter X, Y, Z " << std::endl;
-		int x = 0;
-		std::cin >> x;
-		int y = 0;
-		std::cin >> y;
-		int z = 0;
-		std::cin >> z;
-		if ((x % 5 == 0) && (y % 5 != 0) && (z % 5 != 0))
-		{
-			std::cout << " First number is a multiple of five " << std::endl;
-		}
-		else if ((x % 5 != 0) && (y % 5 == 0) && (z % 5 != 0))
-		{
-			std::cout << " Second number is a multiple of five " << std::endl;
-		}
-		else if ((x % 5 != 0) && (y % 5 != 0) && (z % 5 == 0))
-		{
-			std::cout << " Third number is a multiple of five " << std::endl;
-		}
-		else if ((x % 5 == 0) && (y % 5 == 0) && (z % 5 == 0))
-		{
-			std::cout << " All numbers are multiple of five " << std::endl;
-		}
-		else
-		{
-			std::cout << " All numbers aren't multiple of five " << std::endl;
-		}
-	}
-	/// 6
-	{
-		std::cout << " Enter X, Y, Z " << std::endl;
-		int x = 0;
-		std::cin >> x;
-		int y = 0;
-		std::cin >> y;
-		int z = 0;
-		std::cin >> z;
-		if ((x >= 100) || (y >= 100) || (z >= 100))
-		{
-			std::cout << " At least one number more than 100 " << std::endl;
-		}
-		else
-		{
-			std::cout << " All numbers less than 100 " << std::endl;
-		}
+    /// 4
+    {
+        std::cout << " Enter X, Y, Z " << std::endl;
+        int x = 0;
+        std::cin >> x;
+        int y = 0;
+        std::cin >> y;
+        int z = 0;
+        std::cin >> z;
+        if ((x < 0) && (y < 0) && (z < 0))\
+        {
+            std::cout << " All numbers are negative(-) " << std::endl;
+        }
+        else
+        {
+            std::cout << " At least one number is positive(+) " << std::endl;
+        }
     }
-	/// 7
+    /// 5
+    {
+        std::cout << " Enter X, Y, Z " << std::endl;
+        int x = 0;
+        std::cin >> x;
+        int y = 0;
+        std::cin >> y;
+        int z = 0;
+        std::cin >> z;
+        if ((x % 5 == 0) && (y % 5 != 0) && (z % 5 != 0))
+        {
+            std::cout << " First number is a multiple of five " << std::endl;
+        }
+        else if ((x % 5 != 0) && (y % 5 == 0) && (z % 5 != 0))
+        {
+            std::cout << " Second number is a multiple of five " << std::endl;
+        }
+        else if ((x % 5 != 0) && (y % 5 != 0) && (z % 5 == 0))
+        {
+            std::cout << " Third number is a multiple of five " << std::endl;
+        }
+        else if ((x % 5 == 0) && (y % 5 == 0) && (z % 5 == 0))
+        {
+            std::cout << " All numbers are multiple of five " << std::endl;
+        }
+        else
+        {
+            std::cout << " All numbers aren't multiple of five " << std::endl;
+        }
+    }
+    /// 6
+    {
+        std::cout << " Enter X, Y, Z " << std::endl;
+        int x = 0;
+        std::cin >> x;
+        int y = 0;
+        std::cin >> y;
+        int z = 0;
+        std::cin >> z;
+        if ((x >= 100) || (y >= 100) || (z >= 100))
+        {
+            std::cout << " At least one number more than 100 " << std::endl;
+        }
+        else
+        {
+            std::cout << " All numbers less than 100 " << std::endl;
+        }
+    }
+    /// 7
     {
         std::cout << " Enter a, b for rook " << std::endl;
         std::pair<int, int> rook;
@@ -143,7 +143,7 @@ int main()
             std::cout << " Rook can't reach the enemy " << std::endl;
         }
     }
-	/// 8
+    /// 8
     {
         std::cout << " Enter a, b for bishop " << std::endl;
         std::pair<int, int> bishop;
@@ -151,7 +151,8 @@ int main()
         std::cout << " Enter c, d for enemy figure " << std::endl;
         std::pair<int, int> enemy;
         std::cin >> enemy.first >> enemy.second;
-        while (bishop.first>8 || bishop.second>8 || bishop.first<0 || bishop.second<0)
+        while (bishop.first > 8 || bishop.second > 8 || bishop.first < 0
+           || bishop.second < 0)
         {
             std::cout << " a and b must be > 0 and <= 8 " << std::endl;
             std::cin >> bishop.first >> bishop.second;
@@ -188,7 +189,7 @@ int main()
             std::cout << " c and d must be > 0 and <= 8 " << std::endl;
             std::cin >> field.first >> field.second;
         }
-        if ((((king.first - field.first) == 1) || ((king.second - field.second) == 1)) || 
+        if ((((king.first - field.first) == 1) || ((king.second - field.second) == 1)) ||
             (((king.first - field.first) == -1) || ((king.second - field.second) == -1)))
         {
             std::cout << " King can reach the playing field " << std::endl;
@@ -216,7 +217,7 @@ int main()
             std::cout << " c and d must be > 0 and <= 8 " << std::endl;
             std::cin >> enemy.first >> enemy.second;
         }
-        if ((queen.first - enemy.first) == (queen.second - enemy.second) || 
+        if ((queen.first - enemy.first) == (queen.second - enemy.second) ||
             ((queen.first == enemy.first) || (queen.second == enemy.second)))
         {
             std::cout << " Queen can reach the enemy " << std::endl;
@@ -243,7 +244,7 @@ int main()
             std::cout << " c and d must be > 0 and <= 8 " << std::endl;
             std::cin >> field.first >> field.second;
         }
-        if ((((pawn.first - field.first) == 0) && ((pawn.second - field.second) == -1)) || 
+        if ((((pawn.first - field.first) == 0) && ((pawn.second - field.second) == -1)) ||
             (((pawn.first - field.first) == 0) && ((pawn.second - field.second) == -2)))
         {
             std::cout << " Pawn can reach the field " << std::endl;
@@ -270,7 +271,7 @@ int main()
             std::cout << " c and d must be > 0 and <= 8 " << std::endl;
             std::cin >> enemy.first >> enemy.second;
         }
-        if ((enemy.first == pawn.first + 1) && ((enemy.second == pawn.second + 1) || 
+        if ((enemy.first == pawn.first + 1) && ((enemy.second == pawn.second + 1) ||
             (enemy.second == pawn.second - 1)))
         {
             std::cout << " The pawn can reach the enemy " << std::endl;
@@ -353,4 +354,5 @@ int main()
     }
     return 0;
 }
+
 
