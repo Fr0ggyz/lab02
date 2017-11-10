@@ -151,7 +151,8 @@ int main()
         std::cout << " Enter c, d for enemy figure " << std::endl;
         std::pair<int, int> enemy;
         std::cin >> enemy.first >> enemy.second;
-        while ((bishop.first > 8) || (bishop.second > 8) || (bishop.first < 0) || (bishop.second < 0))
+        while ((bishop.first > 8) || (bishop.second > 8) || (bishop.first < 0)
+              || (bishop.second < 0))
         {
             std::cout << " a and b must be > 0 and <= 8 " << std::endl;
             std::cin >> bishop.first >> bishop.second;
