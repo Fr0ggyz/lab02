@@ -25,7 +25,7 @@ int main()
         std::cin >> x;
         int y = 0;
         std::cin >> y;
-        if (((x < 20) && (y => 20)) || ((x => 20) && (y < 20)))
+        if (((x < 20) && (y > 20)) || ((x > 20) && (y < 20)))
         {
             std::cout << " True " << std::endl;
         }
